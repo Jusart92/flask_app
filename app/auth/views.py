@@ -74,7 +74,7 @@ def signup():
     return render_template('signup.html', **context)
 
 
-@auth.route('logout')
+@auth.route('/logout')
 @login_required
 def logout():
     logout_user()
